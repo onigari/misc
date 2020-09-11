@@ -1,4 +1,4 @@
-Run this script
+Download and run this script (just double click, or right click->Run script)
 
 To increase brightness by 10, hold down Ins and press Left key.
 
