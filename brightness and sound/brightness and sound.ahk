@@ -2,10 +2,9 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+; Hotkeys at the bottom
 
 class BrightnessSetter {
-	; qwerty12 - 27/05/17
-	; https://github.com/qwerty12/AutoHotkeyScripts/tree/master/LaptopBrightnessSetter
 	static _WM_POWERBROADCAST := 0x218, _osdHwnd := 0, hPowrprofMod := DllCall("LoadLibrary", "Str", "powrprof.dll", "Ptr") 
 
 	__New() {
@@ -216,10 +215,10 @@ BrightnessSetter_new() {
 }
 
 BS := new BrightnessSetter()
-
+; Edit the following two lines to change brightness hotkey
 Ins & Right::BS.SetBrightness(10)
 Ins & Left::BS.SetBrightness(-10)
 
-
+; Edit the following two lines to change volume hotkey
 Ins & Up::SoundSet, +2
 Ins & Down::SoundSet, -2
