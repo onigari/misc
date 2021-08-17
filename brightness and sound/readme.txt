@@ -6,4 +6,6 @@ To decrease brightness by 10, hold down Ins and press Right key.
 
 To increase volume by 2, hold down Ins and press Up key.
 
-To increase brightness by 2, hold down Ins and press Down key.
+To decrease volume by 2, hold down Ins and press Down key.
+
+Please refer to the comments in the ahk file for information on how to change the values/keys
